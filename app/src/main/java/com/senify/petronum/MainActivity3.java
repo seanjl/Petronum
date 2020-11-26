@@ -8,6 +8,10 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class MainActivity3 extends AppCompatActivity {
 
@@ -21,36 +25,45 @@ public class MainActivity3 extends AppCompatActivity {
         // RETRIEVE AND PARSE DATA
             // CONSUMO
             // Create object of textBoxConsumo
-            EditText consumo = (EditText) findViewById(R.id.textBoxConsumo);
-            // Take the input and convert it to int
-            String consumoStr = consumo.getText().toString();
-            double consumoDouble = Double.parseDouble(consumoStr);
+            try {
+                EditText consumo = (EditText) findViewById(R.id.textBoxConsumo);
+                // Take the input and convert it to int
+                String consumoStr = consumo.getText().toString();
+                double consumoDouble = Double.parseDouble(consumoStr);
 
-            // CONSUMO
-            EditText distancia = (EditText) findViewById(R.id.textBoxDistancia);
-            String distanciaStr = distancia.getText().toString();
-            double distanciaDouble = Double.parseDouble(distanciaStr);
+                // CONSUMO
+                EditText distancia = (EditText) findViewById(R.id.textBoxDistancia);
+                String distanciaStr = distancia.getText().toString();
+                double distanciaDouble = Double.parseDouble(distanciaStr);
 
-            // Precio Sopa
-            EditText precioSopa = (EditText) findViewById(R.id.textBoxPrecioSopa);
-            String precioSopaStr = precioSopa.getText().toString();
-            double precioSopaDouble = Double.parseDouble(precioSopaStr);
+                // Precio Sopa
+                EditText precioSopa = (EditText) findViewById(R.id.textBoxPrecioSopa);
+                String precioSopaStr = precioSopa.getText().toString();
+                double precioSopaDouble = Double.parseDouble(precioSopaStr);
 
-        // CALCULATE OUTPUTS
-            // GASOFA USADA
-            double gasolinaUsadaDouble = (distanciaDouble/consumoDouble);
-            double precioViajeDouble = (gasolinaUsadaDouble*precioSopaDouble);
+                // CALCULATE OUTPUTS
+                // GASOFA USADA
+                double gasolinaUsadaDouble = (distanciaDouble/consumoDouble);
+                double precioViajeDouble = (gasolinaUsadaDouble*precioSopaDouble);
 
+                // Convert double to a double with only 2 decimals
+                BigDecimal precioViajeBd = new BigDecimal(precioViajeDouble).setScale(3, RoundingMode.HALF_UP);
+                double precioViajeDouble2d = precioViajeBd.doubleValue();
 
-            // UPDATE TEXT VIEW: Create object of textViewM3_4 (Gasolina Usada)
-            TextView gasofaUsada = (TextView)findViewById(R.id.textViewM3_4);
-            gasofaUsada.setText("Gasolina Usada: " + gasolinaUsadaDouble + " L");
+                // Convert double to a double with only 2 decimals
+                BigDecimal gasolinaReqBd = new BigDecimal(gasolinaUsadaDouble).setScale(3, RoundingMode.HALF_UP);
+                double gasolinaReqDouble2d = gasolinaReqBd.doubleValue();
 
-            // UPDATE TEXT VIEW: Create object of textViewM3_4 (Gasolina Usada)
-            TextView precioViaje = (TextView)findViewById(R.id.textViewM3_5);
-        precioViaje.setText("Precio Viaje: " + precioViajeDouble + " €");
+                // UPDATE TEXT VIEW: Create object of textViewM3_resPrec (resultado precio)
+                TextView precioViajeRes = (TextView)findViewById(R.id.textViewM3_lbl_precio);
+                precioViajeRes.setText("Precio del viaje: " + precioViajeDouble2d + " €");
 
-
+                // UPDATE TEXT VIEW: Create object of textViewM3_resGas (resultado gasofa usada)
+                TextView precioGasRes = (TextView)findViewById(R.id.textViewM3_lbl_gaso);
+                precioGasRes.setText("Gasolina requerida: " + gasolinaReqBd + " L");
+            } catch (Exception e)  {
+                Toast.makeText(MainActivity3.this,"No has introducido todos los valores", Toast.LENGTH_LONG).show();
+            }
     }
 
     @Override

@@ -12,7 +12,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/colorSecondaryDark"
+            android:background="@color/colorPrimaryDark"
             tools:context=".MainActivity3">
 
             <TextView
@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/m3_text"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="@android:color/background_light"
+                android:textColor="@color/colorAccentSecondary"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -77,8 +77,8 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:textColor="@color/cardview_light_background"
                 android:inputType="numberDecimal"
+                android:textColor="@color/cardview_light_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.414"
                 app:layout_constraintStart_toStartOf="parent"
@@ -102,9 +102,9 @@
                 android:id="@+id/textBoxPrecioSopa"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:textColor="@color/cardview_light_background"
                 android:layout_marginTop="15dp"
                 android:inputType="numberDecimal"
+                android:textColor="@color/cardview_light_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.414"
                 app:layout_constraintStart_toStartOf="parent"
@@ -112,59 +112,85 @@
 
             <Button
                 android:id="@+id/buttonCalcPreViaj"
-                android:layout_width="300dp"
+                android:layout_width="0dp"
                 android:layout_height="46dp"
+                android:layout_marginHorizontal="15dp"
                 android:layout_marginTop="60dp"
                 android:background="@color/colorSecondary"
                 android:onClick="calcularPrecioViaje"
                 android:text="@string/m3_calcular"
 
+                android:textColor="@color/cardview_light_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textBoxPrecioSopa"
                 tools:text="@string/m3_calcular" />
 
             <TextView
-                android:id="@+id/textViewM3_4"
+                android:id="@+id/textViewM3_resultado"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="60dp"
+                android:text="@string/m3_textResultado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorAccentSecondary"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.098"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider"
+                tools:text="@string/m3_textResultado" />
+
+            <TextView
+                android:id="@+id/textViewM3_lbl_precio"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
                 android:text="@string/m3_text_4"
+                android:textAlignment="viewStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@android:color/background_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.137"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonCalcPreViaj"
+                app:layout_constraintTop_toBottomOf="@+id/textViewM3_resultado"
                 tools:text="@string/m3_text_4" />
 
             <TextView
-                android:id="@+id/textViewM3_5"
-                android:layout_width="wrap_content"
+                android:id="@+id/textViewM3_lbl_gaso"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="100dp"
-                android:text="@string/m3_text_5"
+                android:layout_marginTop="30dp"
+                android:text="@string/m3_text_6"
+                android:textAlignment="viewStart"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@android:color/background_light"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintHorizontal_bias="0.137"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewM3_4"
-                tools:text="@string/m3_text_5" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewM3_lbl_precio"
+                tools:text="@string/m3_text_6" />
 
             <TextView
-                android:id="@+id/textViewM3_6"
+                android:id="@+id/emptyTEXT"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@android:color/background_light"
+                android:textStyle="italic"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.125"
+                app:layout_constraintTop_toBottomOf="@+id/textViewM3_lbl_gaso"
+                tools:layout_editor_absoluteY="721dp" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="60dp"
+                android:background="@color/colorSecondary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewM3_5"
-                tools:text="" />
+                app:layout_constraintTop_toBottomOf="@+id/buttonCalcPreViaj" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>

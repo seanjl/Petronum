@@ -5,8 +5,13 @@
     <string name="m3_text_1">Consumo (km/l)</string>
     <string name="m3_text_2">Distancia (km)</string>
     <string name="m3_text_3">Precio Gasolina (€/L)</string>
-    <string name="m2_precioViaje">CALCULAR PRECIO DE UN VIAJE</string>
+    <string name="m2_precioViaje">PRECIO DE UN VIAJE / GASOLINA REQUERIDA</string>
     <string name="m3_calcular">CALCULAR</string>
-    <string name="m3_text_4">Gasolina usada:</string>
-    <string name="m3_text_5">Precio Viaje:</string>
+    <string name="m3_text_4">Precio Viaje:</string>
+    <string name="m3_text_6">Gasolina usada:</string>
+    <string name="m3_textResultado">Resultados:</string>
+    <string name="m2_about">SOBRE ESTA APP</string>
+    <string name="m4_text">Petronum</string>
+    <string name="m4_text_2">Version 0.1</string>
+    <string name="m4_text_3">Desarrollado por Sean Leitch \n \n  https://github.com/seanjl  \n https://seanjl.github.io/Senify/ \n \n Creado entre 26-26 Nov 2020</string>
 </resources>

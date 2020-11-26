@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorSecondaryDark"
+    android:background="@color/colorPrimaryDark"
     tools:context=".MainActivity2">
 
     <TextView
@@ -13,27 +13,44 @@
         android:layout_height="wrap_content"
         android:text="@string/m2_welcome"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@android:color/background_light"
+        android:textColor="@color/colorAccentSecondary"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
+        app:layout_constraintVertical_bias="0.052"
         tools:text="@string/m2_welcome" />
 
     <Button
         android:id="@+id/buttonGoCalcPreViaj"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="46dp"
+        android:layout_marginHorizontal="15dp"
         android:layout_marginTop="30dp"
         android:background="@color/colorSecondary"
         android:onClick="goCalcularPrecioViaje"
         android:text="@string/m2_precioViaje"
 
+        android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMA2_1" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorSecondary"
+        android:onClick="goAboutApp"
+        android:text="@string/m2_about"
+
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoCalcPreViaj" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Petronum</string>
+    <string name="m2_welcome">¿Que quieres calcular?</string>
+    <string name="m3_text">Calcular el precio de un viaje</string>
+    <string name="m3_text_1">Consumo (km/l)</string>
+    <string name="m3_text_2">Distancia (km)</string>
+    <string name="m3_text_3">Precio Gasolina (€/L)</string>
+    <string name="m2_precioViaje">CALCULAR PRECIO DE UN VIAJE</string>
+    <string name="m3_calcular">CALCULAR</string>
+    <string name="m3_text_4">Gasolina usada:</string>
+    <string name="m3_text_5">Precio Viaje:</string>
+</resources>

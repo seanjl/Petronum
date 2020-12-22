@@ -2,8 +2,10 @@ package com.senify.petronum;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 
 public class MainActivity4 extends AppCompatActivity {
 
@@ -11,12 +13,13 @@ public class MainActivity4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
     }
 
     @Override
     public void onBackPressed() {
-        Intent abrirMA2 = new Intent(MainActivity4.this, MainActivity2.class);
-        startActivity(abrirMA2);
         finish();
     }
 }

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
     <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
 
@@ -17,30 +22,36 @@
 
             <TextView
                 android:id="@+id/textView"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:text="@string/m3_text"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="@color/colorAccentSecondary"
+                android:textColor="@color/cardview_light_background"
+
                 android:textStyle="bold"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.222"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.023"
+
+                app:layout_constraintHorizontal_bias="0.266"
+                app:layout_constraintVertical_bias="0.033"
+
                 tools:text="@string/m3_text" />
 
             <TextView
                 android:id="@+id/textViewM3_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="32dp"
                 android:text="@string/m3_text_1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/background_light"
+                android:textColor="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintHorizontal_bias="0.119"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:text="@string/m3_text_1" />
@@ -50,11 +61,11 @@
 
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="16dp"
                 android:inputType="numberDecimal"
-                android:textColor="@color/cardview_light_background"
+                android:textColor="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.414"
+                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewM3_1" />
 
@@ -65,22 +76,22 @@
                 android:layout_marginTop="30dp"
                 android:text="@string/m3_text_2"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/background_light"
+                android:textColor="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.137"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textBoxConsumo"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup"
                 tools:text="@string/m3_text_2" />
 
             <EditText
                 android:id="@+id/textBoxDistancia"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="16dp"
                 android:inputType="numberDecimal"
-                android:textColor="@color/cardview_light_background"
+                android:textColor="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.414"
+                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewM3_2" />
 
@@ -88,12 +99,12 @@
                 android:id="@+id/textViewM3_3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="28dp"
                 android:text="@string/m3_text_3"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/background_light"
+                android:textColor="@color/colorWhite"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.137"
+                app:layout_constraintHorizontal_bias="0.165"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textBoxDistancia"
                 tools:text="@string/m3_text_3" />
@@ -102,11 +113,11 @@
                 android:id="@+id/textBoxPrecioSopa"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="16dp"
                 android:inputType="numberDecimal"
                 android:textColor="@color/cardview_light_background"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.414"
+                app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textViewM3_3" />
 
@@ -126,73 +137,66 @@
                 app:layout_constraintTop_toBottomOf="@+id/textBoxPrecioSopa"
                 tools:text="@string/m3_calcular" />
 
-            <TextView
-                android:id="@+id/textViewM3_resultado"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="60dp"
-                android:text="@string/m3_textResultado"
-                android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textColor="@color/colorAccentSecondary"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.098"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider"
-                tools:text="@string/m3_textResultado" />
-
-            <TextView
-                android:id="@+id/textViewM3_lbl_precio"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="28dp"
-                android:text="@string/m3_text_4"
-                android:textAlignment="viewStart"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/background_light"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.137"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewM3_resultado"
-                tools:text="@string/m3_text_4" />
-
-            <TextView
-                android:id="@+id/textViewM3_lbl_gaso"
-                android:layout_width="280dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:text="@string/m3_text_6"
-                android:textAlignment="viewStart"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/background_light"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.137"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewM3_lbl_precio"
-                tools:text="@string/m3_text_6" />
 
             <TextView
                 android:id="@+id/emptyTEXT"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/background_light"
-                android:textStyle="italic"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewM3_lbl_gaso"
-                tools:layout_editor_absoluteY="721dp" />
 
-            <View
-                android:id="@+id/divider"
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="60dp"
-                android:background="@color/colorSecondary"
+                android:layout_marginTop="250dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+                android:textStyle="italic"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonCalcPreViaj"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+
+                android:checkedButton="@+id/radioButtonKML"
+
+                android:layout_marginTop="26dp"
+
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonCalcPreViaj" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textBoxConsumo" >
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonKML"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/m3_kml"
+                    android:textColor="@color/colorWhite"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonL100KM"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:text="@string/m3_l100km"
+                    android:textColor="@color/colorWhite"/>
+
+            </RadioGroup>
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </ScrollView>
+
+
 

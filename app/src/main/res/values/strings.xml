@@ -1,8 +1,13 @@
 <resources>
     <string name="app_name">Petronum</string>
+    <string name="app_dev">senify</string>
+
+    <!-- MA2 / Main Menu -->
     <string name="m2_welcome">¿Que quieres calcular?</string>
-    <string name="m3_text">Calcular el precio de un viaje</string>
-    <string name="m3_text_1">Consumo (km/l)</string>
+
+    <!-- MA3 / Calcular el precio de un viaje -->
+    <string name="m3_text">Calcular el Precio de un Viaje</string>
+    <string name="m3_text_1">Consumo</string>
     <string name="m3_text_2">Distancia (km)</string>
     <string name="m3_text_3">Precio Gasolina (€/L)</string>
     <string name="m2_precioViaje">PRECIO DE UN VIAJE / GASOLINA REQUERIDA</string>
@@ -10,8 +15,33 @@
     <string name="m3_text_4">Precio Viaje:</string>
     <string name="m3_text_6">Gasolina usada:</string>
     <string name="m3_textResultado">Resultados:</string>
+
+    <string name="m3_kml">km/L</string>
+    <string name="m3_lkm">L/km</string>
+    <string name="m3_l100km">L/100km</string>
+
+    <string-array name="spinner_consumo_units">
+        <item>km/L</item>
+        <item>L/km</item>
+        <item>L/100km</item>
+    </string-array>
+
+    <!-- MA4 / About App -->
     <string name="m2_about">SOBRE ESTA APP</string>
     <string name="m4_text">Petronum</string>
     <string name="m4_text_2">Version 0.1</string>
-    <string name="m4_text_3">Desarrollado por Sean Leitch \n \n  https://github.com/seanjl  \n https://seanjl.github.io/Senify/ \n \n Creado entre 26-26 Nov 2020</string>
+    <string name="m4_text_3">Desarrollado por Sean Leitch \n \n  https://github.com/seanjl  \n https://seanjl.github.io/Senify/ \n \n Creado en Dec 2020</string>
+
+    <!-- MA5 -->
+    <string name="m5_text">Registro</string>
+    <string name="m5_text_1">km/L</string>
+    <string name="m5_text_2">L/km</string>
+    <string name="m5_text_3">L/100km</string>
+    <string name="m5_text_4">Consumo en L/100km:</string>
+    <string name="m5_convertir">Convertir</string>
+
+    <!-- MA6 / Registro -->
+    <string name="m6_text">Registro</string>
+
+    <string name="nulltext">nulltext</string>
 </resources>

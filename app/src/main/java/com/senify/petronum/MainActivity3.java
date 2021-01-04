@@ -29,8 +29,8 @@ public class MainActivity3 extends AppCompatActivity {
     public void calcularPrecioViaje(View view) {
         // RETRIEVE AND PARSE DATA
 
-        RadioButton radioButton = findViewById(R.id.radioButtonKML);
         RadioButton radioButton3 = findViewById(R.id.radioButtonL100KM);
+        RadioButton radioButton = findViewById(R.id.radioButtonKML);
 
             try {
                 // If radioButton is checked -> calculate using km/L
@@ -102,10 +102,15 @@ public class MainActivity3 extends AppCompatActivity {
                     BigDecimal gasolinaReqBd = new BigDecimal(gasolinaUsadaDouble).setScale(2, RoundingMode.HALF_UP);
                     double gasolinaReqDouble2d = gasolinaReqBd.doubleValue();
 
+                    // Convert double to a double with only 2 decimals
+                    BigDecimal distanciaBd = new BigDecimal(distanciaDouble).setScale(2, RoundingMode.HALF_UP);
+                    double distanciaBdDouble2d = distanciaBd.doubleValue();
+
                     // Open Results Activity
                     Intent abrirMA3res = new Intent(MainActivity3.this, MainActivity3Results.class);
                     abrirMA3res.putExtra("resultadoPrecio", precioViajeDouble2d); // lleva el resultado precio al activity resultado
                     abrirMA3res.putExtra("resultadoGasofaReq", gasolinaReqDouble2d);
+                    abrirMA3res.putExtra("resultadoDistancia", distanciaBdDouble2d);
                     startActivity(abrirMA3res);
                 }
 

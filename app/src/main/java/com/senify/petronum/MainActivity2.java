@@ -17,13 +17,21 @@ public class MainActivity2 extends AppCompatActivity {
     public void goCalcularPrecioViaje(View view) {
         Intent abrirMA3 = new Intent(MainActivity2.this, MainActivity3.class);
         startActivity(abrirMA3);
-
     }
 
     public void goAboutApp(View view) {
         Intent abrirMA4 = new Intent(MainActivity2.this, MainActivity4.class);
         startActivity(abrirMA4);
+    }
 
+    public void goDistCanRec(View view) {
+        Intent abrirMA5 = new Intent(MainActivity2.this, MainActivity5.class);
+        startActivity(abrirMA5);
+    }
+
+    public void goLitrosEnDeposito(View view) {
+        Intent abrirMA6 = new Intent(MainActivity2.this, MainActivity6.class);
+        startActivity(abrirMA6);
     }
 
     @Override

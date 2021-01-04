@@ -4,17 +4,19 @@
 
     <!-- MA2 / Main Menu -->
     <string name="m2_welcome">¿Que quieres calcular?</string>
+    <string name="m2_precioViaje">PRECIO DE UN VIAJE / GASOLINA REQUERIDA</string>
+    <string name="m2_distanciaCanRecorrer">DISTANCIA QUE PUEDO RECORRER</string>
 
     <!-- MA3 / Calcular el precio de un viaje -->
-    <string name="m3_text">Calcular el Precio de un Viaje</string>
-    <string name="m3_text_1">Consumo</string>
-    <string name="m3_text_2">Distancia (km)</string>
-    <string name="m3_text_3">Precio Gasolina (€/L)</string>
-    <string name="m2_precioViaje">PRECIO DE UN VIAJE / GASOLINA REQUERIDA</string>
+    <string name="m3_text">Calcular el precio de un viaje</string>
+    <string name="m3_text_1">- Consumo</string>
+    <string name="m3_text_2">- Distancia (km)</string>
+    <string name="m3_text_3">- Precio Gasolina (€/L)</string>
+
     <string name="m3_calcular">CALCULAR</string>
-    <string name="m3_text_4">Precio Viaje:</string>
-    <string name="m3_text_6">Gasolina usada:</string>
-    <string name="m3_textResultado">Resultados:</string>
+    <string name="m3_text_4">- Precio Viaje:</string>
+    <string name="m3_text_6">- Gasolina usada:</string>
+    <string name="m3_textResultado">Resultados</string>
 
     <string name="m3_kml">km/L</string>
     <string name="m3_lkm">L/km</string>
@@ -30,18 +32,32 @@
     <string name="m2_about">SOBRE ESTA APP</string>
     <string name="m4_text">Petronum</string>
     <string name="m4_text_2">Version 0.1</string>
-    <string name="m4_text_3">Desarrollado por Sean Leitch \n \n  https://github.com/seanjl  \n https://seanjl.github.io/Senify/ \n \n Creado en Dec 2020</string>
+    <string name="m4_text_3">Desarrollado por Sean Leitch \n \n  https://github.com/seanjl  \n https://seanjl.github.io/Senify/ \n
+    \n Petronum es una app que te permite hacer calculos sencillos sobre tu consumo de gasólina! </string>
 
     <!-- MA5 -->
-    <string name="m5_text">Registro</string>
+    <string name="m5_text">Calcular la distancia que puedes recorrer según la gasolina que tengas</string>
     <string name="m5_text_1">km/L</string>
     <string name="m5_text_2">L/km</string>
     <string name="m5_text_3">L/100km</string>
     <string name="m5_text_4">Consumo en L/100km:</string>
+    <string name="m5_text_5">- Gasolina que vas a usar (L)</string>
+    <string name="m5_text_6">- Puedes recorrer:</string>
     <string name="m5_convertir">Convertir</string>
 
     <!-- MA6 / Registro -->
-    <string name="m6_text">Registro</string>
+    <string name="m6_text">LITROS EN EL DEPOSITO</string>
+    <string name="m6_title">Calcular cuántos L quedan en tu depósito</string>
+    <string name="m6_deposito">- Capacidad total de tu depósito (L)</string>
+    <string name="m6_commolleno">- Cómo de lleno está tu depósito (%)</string>
+
+    <string name="m6_pcnt0">0</string>
+    <string name="m6_pcnt25">25</string>
+    <string name="m6_pcnt50">50</string>
+    <string name="m6_pcnt75">75</string>
+    <string name="m6_pcnt100">100</string>
+
+    <string name="m6_calcular_donde">¿HASTA DONDE \n PUEDO IR?</string>
 
     <string name="nulltext">nulltext</string>
 </resources>

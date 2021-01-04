@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5Results"
+    android:background="@color/colorPrimaryDark">
+
+
+    <TextView
+        android:id="@+id/textViewM5res_resultado"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/m3_textResultado"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".024"
+
+        tools:text="@string/m3_textResultado" />
+
+    <TextView
+        android:id="@+id/textViewM5res_recorrer"
+
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+
+        android:text="@string/m5_text_6"
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorWhite"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewM5res_resultado"
+
+        tools:text="@string/m5_text_6" />
+
+    <TextView
+        android:id="@+id/textViewM5res_DISTANCIA"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/colorWhite"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewM5res_recorrer"
+        />
+
+    <ImageView
+        android:id="@+id/img_car"
+
+        android:layout_width="298dp"
+        android:layout_height="86dp"
+
+        android:layout_marginTop="100dp"
+
+        android:src="@drawable/jerrycan1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewM5res_DISTANCIA" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

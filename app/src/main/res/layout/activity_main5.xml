@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-    <ScrollView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -15,18 +15,17 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorPrimaryDark"
-            tools:context=".MainActivity3">
+            tools:context=".MainActivity5">
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textViewMA5"
 
-                android:layout_width="wrap_content"
+                android:layout_width="326dp"
                 android:layout_height="wrap_content"
 
-                android:text="@string/m3_text"
+                android:text="@string/m5_text"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/cardview_light_background"
-
                 android:textStyle="bold"
 
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -34,10 +33,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
 
-                app:layout_constraintHorizontal_bias="0.266"
-                app:layout_constraintVertical_bias="0.033"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintVertical_bias="0.024"
 
-                tools:text="@string/m3_text" />
+                tools:text="@string/m5_text" />
 
             <TextView
                 android:id="@+id/textViewM3_1"
@@ -46,6 +45,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginTop="32dp"
+
                 android:text="@string/m3_text_1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorWhite"
@@ -53,7 +53,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.119"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMA5"
 
                 tools:text="@string/m3_text_1" />
 
@@ -62,7 +62,6 @@
 
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="16dp"
 
                 android:inputType="numberDecimal"
@@ -74,30 +73,28 @@
                 app:layout_constraintTop_toBottomOf="@+id/textViewM3_1" />
 
             <TextView
-                android:id="@+id/textViewM3_2"
+                android:id="@+id/textViewM5_2"
 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
 
-                android:layout_marginTop="30dp"
-
-                android:text="@string/m3_text_2"
+                android:text="@string/m5_text_5"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@color/colorWhite"
 
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.136"
+                app:layout_constraintHorizontal_bias="0.153"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/radioGroup"
 
-                tools:text="@string/m3_text_2" />
+                tools:text="@string/m5_text_5" />
 
             <EditText
-                android:id="@+id/textBoxDistancia"
+                android:id="@+id/textBoxDeposito"
 
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-
                 android:layout_marginTop="16dp"
 
                 android:inputType="numberDecimal"
@@ -106,64 +103,30 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.495"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewM3_2" />
-
-            <TextView
-                android:id="@+id/textViewM3_3"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="30dp"
-
-                android:text="@string/m3_text_3"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@color/colorWhite"
-
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.167"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textBoxDistancia"
-
-                tools:text="@string/m3_text_3" />
-
-            <EditText
-                android:id="@+id/textBoxPrecioSopa"
-
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-
-                android:layout_marginTop="16dp"
-                android:inputType="numberDecimal"
-
-                android:textColor="@color/cardview_light_background"
-
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.495"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewM3_3" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewM5_2" />
 
             <Button
-                android:id="@+id/buttonCalcPreViaj"
-
+                android:id="@+id/buttonCalcDistCanRec"
                 android:layout_width="0dp"
                 android:layout_height="46dp"
 
                 android:layout_marginHorizontal="15dp"
-                android:layout_marginTop="60dp"
+
+                android:layout_marginTop="36dp"
 
                 android:background="@color/colorSecondary"
 
-                android:onClick="calcularPrecioViaje"
-
+                android:onClick="calcularDistanciaCanRec"
                 android:text="@string/m3_calcular"
+
                 android:textColor="@color/cardview_light_background"
-
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textBoxPrecioSopa"
-                tools:text="@string/m3_calcular" />
 
+                app:layout_constraintHorizontal_bias="0.482"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textBoxDeposito"
+
+                tools:text="@string/m3_calcular" />
 
             <TextView
                 android:id="@+id/emptyTEXT"
@@ -178,7 +141,7 @@
                 android:textStyle="italic"
 
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonCalcPreViaj"
+                app:layout_constraintTop_toBottomOf="@+id/buttonCalcDistCanRec"
                 />
 
             <RadioGroup

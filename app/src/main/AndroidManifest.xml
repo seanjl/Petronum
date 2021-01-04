@@ -9,21 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity3Results"
-            android:parentActivityName=".MainActivity3" >
-        </activity>
+
+        <activity android:name=".MainActivity6"
+            android:parentActivityName=".MainActivity2" />
 
         <activity
-            android:name=".MainActivity5Conv"
-            android:parentActivityName=".MainActivity2"/>
+            android:name=".MainActivity3Results"
+            android:parentActivityName=".MainActivity3" />
 
         <activity
             android:name=".MainActivity4"
             android:parentActivityName=".MainActivity2" />
 
         <activity
+            android:name=".MainActivity5Results"
+            android:parentActivityName=".MainActivity3" />
+
+        <activity
+            android:name=".MainActivity5"
+            android:parentActivityName=".MainActivity2" />
+
+        <activity
             android:name=".MainActivity3"
             android:parentActivityName=".MainActivity2" />
+
         <activity android:name=".MainActivity2" />
         <activity android:name=".MainActivity">
             <intent-filter>

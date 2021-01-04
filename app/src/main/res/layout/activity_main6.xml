@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            tools:context=".MainActivity6">
+
+            <TextView
+                android:id="@+id/textViewMA6"
+
+                android:layout_width="326dp"
+                android:layout_height="wrap_content"
+
+                tools:text="@string/m6_title"
+                android:text="@string/m6_title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/cardview_light_background"
+
+                android:textStyle="bold"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintVertical_bias="0.024"
+
+                 />
+
+            <TextView
+                android:id="@+id/textViewM6_1"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="@string/m6_deposito"
+                tools:text="@string/m6_deposito"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewMA6"
+
+                />
+
+            <EditText
+                android:id="@+id/editTextMA6capDeposito"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+
+                android:inputType="numberDecimal"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewM6_1" />
+
+            <TextView
+                android:id="@+id/textViewM6_2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+
+                android:text="@string/m6_commolleno"
+                tools:text="@string/m6_commolleno"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextMA6capDeposito"
+
+                />
+
+            <TextView
+                android:id="@+id/textViewM6_pcnt0"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+
+                android:text="@string/m6_pcnt0"
+                tools:text="@string/m6_pcnt0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.119"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+
+                />
+
+
+            <TextView
+                android:id="@+id/textViewM6_pcnt25"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:text="@string/m6_pcnt25"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toStartOf="@+id/textViewM6_pcnt50"
+                app:layout_constraintStart_toEndOf="@+id/textViewM6_pcnt0"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+                tools:text="@string/m6_pcnt25" />
+
+            <TextView
+                android:id="@+id/textViewM6_pcnt50"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:text="@string/m6_pcnt50"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+                tools:text="@string/m6_pcnt50" />
+
+            <TextView
+                android:id="@+id/textViewM6_pcnt75"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+
+                android:text="@string/m6_pcnt75"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toStartOf="@+id/textViewM6_pcnt100"
+                app:layout_constraintStart_toEndOf="@+id/textViewM6_pcnt50"
+
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+                tools:text="@string/m6_pcnt75" />
+
+
+            <TextView
+                android:id="@+id/textViewM6_pcnt100"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+
+                android:text="@string/m6_pcnt100"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.881"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+                tools:text="@string/m6_pcnt100" />
+
+            <SeekBar
+                android:id="@+id/seekBarMA6"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewM6_2" />
+
+            <TextView
+                android:id="@+id/textViewM6_3"
+
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="50dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/colorWhite"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+
+                />
+
+            <Button
+                android:id="@+id/buttonCalcCuantosLhay"
+
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+
+                android:layout_marginTop="200dp"
+                android:layout_marginStart="40dp"
+
+                android:background="@color/colorSecondary"
+                android:onClick="calcularCuantosLhay"
+
+                android:text="@string/m3_calcular"
+                android:textColor="@color/cardview_light_background"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+                tools:text="@string/m3_calcular" />
+
+            <Button
+                android:id="@+id/buttonCalcDondeCanGo"
+
+                android:layout_width="140dp"
+                android:layout_height="46dp"
+
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="200dp"
+
+                android:background="@color/colorSecondary"
+                android:onClick="calcularDondeLlegar"
+
+                android:text="@string/m6_calcular_donde"
+                android:textColor="@color/cardview_light_background"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/seekBarMA6"
+                tools:text="@string/m6_calcular_donde" />
+
+            <TextView
+                android:id="@+id/emptyTEXT"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="250dp"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorWhite"
+                android:textStyle="italic"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonCalcCuantosLhay"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
+
+
+

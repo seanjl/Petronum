@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
 
         android:layout_marginTop="30dp"
+        android:padding="10dp"
 
         tools:text="@string/m4_text_3"
         android:text="@string/m4_text_3"
@@ -66,7 +67,7 @@
         android:layout_width="92dp"
         android:layout_height="117dp"
 
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="20dp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

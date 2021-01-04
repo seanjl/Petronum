@@ -28,33 +28,72 @@
 
     <Button
         android:id="@+id/buttonGoCalcPreViaj"
+
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="30dp"
+
         android:background="@color/colorSecondary"
         android:onClick="goCalcularPrecioViaje"
-        android:text="@string/m2_precioViaje"
 
+        android:text="@string/m2_precioViaje"
         android:textColor="@color/cardview_light_background"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewMA2_1" />
 
 
     <Button
-        android:id="@+id/buttonAbout"
+        android:id="@+id/buttonGoCalcDistCanRec"
+
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_marginHorizontal="15dp"
         android:layout_marginTop="30dp"
-        android:background="@color/colorSecondary"
-        android:onClick="goAboutApp"
-        android:text="@string/m2_about"
 
+        android:background="@color/colorSecondary"
+        android:onClick="goDistCanRec"
+        android:text="@string/m2_distanciaCanRecorrer"
         android:textColor="@color/cardview_light_background"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonGoCalcPreViaj" />
+
+    <Button
+        android:id="@+id/buttonGoCalcLitrosEnDeposito"
+
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+
+        android:background="@color/colorSecondary"
+        android:onClick="goLitrosEnDeposito"
+        android:text="@string/m6_text"
+        android:textColor="@color/cardview_light_background"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoCalcDistCanRec" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="30dp"
+
+        android:background="@color/colorSecondary"
+        android:onClick="goAboutApp"
+        android:text="@string/m2_about"
+        android:textColor="@color/cardview_light_background"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGoCalcLitrosEnDeposito" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
